@@ -1,2 +1,5 @@
 # ignore files
 .DS_Store
+
+# ignore directory
+sandbox/
