@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100"> <!-- for sticky footer purpose -->
+  <head>
+    <title>To Do List</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--    Font Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    
+    <!-- Sticky footer CSS, from Bootstrap -->
+    <link href="./css/sticky-footer.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link href="./css/mystyle.css" rel="stylesheet">
+    
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div class="container">
+      <h1 id="header">To Do List</h1>
+      <h2>Don't procrastinate!</h2>
+      <div id='counter'>
+        <button type="button" class="btn btn-secondary">
+          To Do <span class="badge badge-light" id='todo'></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          Done <span class="badge badge-light" id='done'></span>
+        </button>
+        <button type="button" class="btn btn-info">
+          All <span class="badge badge-light" id='allItems'></span>
+        </button>            
+      </div>
+
+      
+      <div class='mainInterface'>
+        <!-- user input new item to do-->
+        <input type="text" id="itemDescription" placeholder="Something to do next...">
+        <!--      dropdown button for some functionality-->
+        <div class="btn-group dropright">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" id='markAllDone' href="#">Mark All Done</a>
+            <a class="dropdown-item" id='markAllTodo' href="#">Mark All Todo</a>
+            <a class="dropdown-item" id='sort' href="#">Sort A-Z</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" id='removeDone' href="#">Remove Done</a>
+            <a class="dropdown-item" id='removeTodo' href="#">Remove Todo</a>
+            <a class="dropdown-item" id='removeAll' href="#">Remove All</a>
+          </div>
+        </div>
+      </div>
+      <ul class="list-unstyled">
+      </ul>
+    </div>
+    
+    <!-- sticky footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="footer container">
+        <span class="text-muted">&#169Fanchen Bao 2019. Powered by <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://fontawesome.com/">Font Awesome</a></span>
+      </div>
+    </footer>
+    
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--    Local JS File-->
+    <script src="./todolist.js"></script>
+  </body>
+</html>
