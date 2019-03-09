@@ -13,3 +13,119 @@
 span.projectName{
   font-weight: bold;
 }
+
+span.contactInfo{
+  padding-left: 10px;
+}
+
+h4.text-uppercase.mb-4{
+  text-align: center;
+}
+
+ul.list-inline.mb-0{
+  text-align: center;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #666666;
+}
+
+hr.star-dark {
+  border-color: #ff4d4d;
+}
+
+hr.star-dark:after {
+  color: #ff4d4d;
+  background-color: white;
+}
+
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #666666;
+}
+
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #666666;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #fff;
+    background: #666666;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff;
+    background: #666666;
+  }
+}
+
+
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background-color: rgba(102, 102, 102, 0.9);
+}
+
+.floating-label-form-group-with-focus label {
+  color: #666666;
+}
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+a {
+  color: #ff4d4d;
+}
+
+a:focus, a:hover, a:active {
+  color: #e62e00;
+}
+
+.bg-primary {
+  background-color: #666666 !important;
+}
+
+.bg-secondary {
+  background-color: #ff4d4d !important;
+}
+
+.text-primary {
+  color: #666666 !important;
+}
+
+.text-secondary {
+  color: #ff4d4d !important;
+}
+
+.btn-primary {
+  background-color: #ff4d4d;
+  border-color: #ff4d4d;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #e62e00;
+  border-color: #e62e00;
+}
+
+.btn-secondary {
+  background-color: #666666;
+  border-color: #666666;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #1a252f;
+  border-color: #1a252f;
+}
