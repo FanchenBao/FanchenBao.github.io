@@ -5,3 +5,11 @@
 #headshot{
   border-radius: 50%;
 }
+
+.mb-5{
+  text-align: left;
+}
+
+span.projectName{
+  font-weight: bold;
+}
