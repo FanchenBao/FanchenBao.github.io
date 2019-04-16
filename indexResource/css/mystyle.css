@@ -40,6 +40,9 @@ hr.star-dark:after {
   background-color: white;
 }
 
+.row{
+  margin-bottom: 50px;
+}
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #666666;
